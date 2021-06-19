@@ -11,6 +11,7 @@ export default function NotFoundPage() {
           width={70}
           height={70}
           className="bg-gray-800 rounded-2xl"
+          alt=""
         />
 
         <h1 className="text-6xl my-5">Whoops!</h1>

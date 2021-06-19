@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import CategoryLabel from "./Categorylabel";
+import CategoryLabel from "./CategoryLabel";
 
 export default function Post({ post, compact }) {
   return (
@@ -36,11 +36,14 @@ export default function Post({ post, compact }) {
             <a className="text-gray-900 hover:text-blue-600">Read More</a>
           </Link>
           <div className="flex items-center">
-            <img
+            <Image
               src={post.frontmatter.author_image}
               alt=""
-              className="mx-4 w-10 h-10 object-cover rounded-full hidden sm:block"
+              className="mx-4 w-10 h-10 object-cover rounded-full hidden sm:block "
+              height={35}
+              width={35}
             />
+
             <h3 className="text-gray-700 font-bold">
               {post.frontmatter.author}
             </h3>
